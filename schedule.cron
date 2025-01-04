@@ -1,0 +1,10 @@
+# Ref: https://crontab.guru
+
+# Every day at 8am, run full watering program
+0 08 * * * /usr/bin/python3 /home/stephen/codebase/autowater/water.py
+
+# Every XX:02, force-shutoff the pumps
+2 * * * * /usr/bin/python3 /home/stephen/codebase/autowater/off.py
+
+# Every minute, run test
+#* * * * * /usr/bin/python3 /home/stephen/codebase/autowater/test.py
